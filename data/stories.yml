@@ -1,0 +1,25 @@
+version: "3.0"
+stories:
+- story: bật thiết bị khi đã có device
+  steps:
+  - intent: turn_on_device
+  - slot_was_set:
+      - device: "đèn"
+  - action: action_turn_on_device
+
+- story: tắt thiết bị khi đã có device
+  steps:
+  - intent: turn_off_device
+  - slot_was_set:
+      - device: "quạt"
+  - action: action_turn_off_device
+
+- story: Greet the bot
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: Say goodbye to the bot
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

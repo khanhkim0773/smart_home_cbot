@@ -1,0 +1,66 @@
+version: "3.0"
+rules:
+- rule: Ask for device if not provided for turning on
+  steps:
+  - intent: turn_on_device
+  - slot_was_set:
+      - device: null
+  - action: utter_ask_device_name
+
+- rule: Ask for device if not provided for turning off
+  steps:
+  - intent: turn_off_device
+  - slot_was_set:
+      - device: null
+  - action: utter_ask_device_name
+
+- rule: Turn on device when specified
+  steps:
+  - intent: turn_on_device
+  - slot_was_set:
+      - device: not null
+  - action: action_turn_on_device
+
+- rule: Turn off device when specified
+  steps:
+  - intent: turn_off_device
+  - slot_was_set:
+      - device: not null
+  - action: action_turn_off_device
+
+- rule: List available devices
+  steps:
+  - intent: get_device_list
+  - action: action_get_device_list
+
+- rule: Get device details when specified
+  steps:
+  - intent: get_device_details
+  - slot_was_set:
+      - device: not null
+  - action: action_get_device_details
+
+- rule: Set brightness for light
+  steps:
+  - intent: set_brightness
+  - action: action_set_brightness
+
+- rule: Set temperature for air conditioner
+  steps:
+  - intent: set_temperature
+  - action: action_set_temperature
+
+- rule: Set fan speed
+  steps:
+  - intent: set_fan_speed
+  - action: action_set_fan_speed
+
+- rule: Respond to greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Respond to goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

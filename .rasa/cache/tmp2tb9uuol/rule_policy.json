@@ -1,0 +1,50 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_device_list\"}}]": "action_get_device_list",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_device_list\"}}, {\"prev_action\": {\"action_name\": \"action_get_device_list\"}, \"user\": {\"intent\": \"get_device_list\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"device\": [1.0]}, \"user\": {\"intent\": \"turn_on_device\"}}]": "action_turn_on_device",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"device\": [1.0]}, \"user\": {\"intent\": \"turn_on_device\"}}, {\"prev_action\": {\"action_name\": \"action_turn_on_device\"}, \"slots\": {\"device\": [1.0]}, \"user\": {\"intent\": \"turn_on_device\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"set_brightness\"}}]": "action_set_brightness",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"set_brightness\"}}, {\"prev_action\": {\"action_name\": \"action_set_brightness\"}, \"user\": {\"intent\": \"set_brightness\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"device\": \"should_not_be_set\"}, \"user\": {\"intent\": \"turn_off_device\"}}]": "utter_ask_device_name",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"device\": \"should_not_be_set\"}, \"user\": {\"intent\": \"turn_off_device\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_device_name\"}, \"slots\": {\"device\": \"should_not_be_set\"}, \"user\": {\"intent\": \"turn_off_device\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"device\": \"should_not_be_set\"}, \"user\": {\"intent\": \"turn_on_device\"}}]": "utter_ask_device_name",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"device\": \"should_not_be_set\"}, \"user\": {\"intent\": \"turn_on_device\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_device_name\"}, \"slots\": {\"device\": \"should_not_be_set\"}, \"user\": {\"intent\": \"turn_on_device\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"device\": [1.0]}, \"user\": {\"intent\": \"turn_off_device\"}}]": "action_turn_off_device",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"device\": [1.0]}, \"user\": {\"intent\": \"turn_off_device\"}}, {\"prev_action\": {\"action_name\": \"action_turn_off_device\"}, \"slots\": {\"device\": [1.0]}, \"user\": {\"intent\": \"turn_off_device\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"set_temperature\"}}]": "action_set_temperature",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"set_temperature\"}}, {\"prev_action\": {\"action_name\": \"action_set_temperature\"}, \"user\": {\"intent\": \"set_temperature\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"set_fan_speed\"}}]": "action_set_fan_speed",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"set_fan_speed\"}}, {\"prev_action\": {\"action_name\": \"action_set_fan_speed\"}, \"user\": {\"intent\": \"set_fan_speed\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"device\": [1.0]}, \"user\": {\"intent\": \"get_device_details\"}}]": "action_get_device_details",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"device\": [1.0]}, \"user\": {\"intent\": \"get_device_details\"}}, {\"prev_action\": {\"action_name\": \"action_get_device_details\"}, \"slots\": {\"device\": [1.0]}, \"user\": {\"intent\": \"get_device_details\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"set_brightness\"}}, {\"prev_action\": {\"action_name\": \"action_set_brightness\"}, \"user\": {\"intent\": \"set_brightness\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"device\": \"should_not_be_set\"}, \"user\": {\"intent\": \"turn_off_device\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_device_name\"}, \"slots\": {\"device\": \"should_not_be_set\"}, \"user\": {\"intent\": \"turn_off_device\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"device\": [1.0]}, \"user\": {\"intent\": \"get_device_details\"}}, {\"prev_action\": {\"action_name\": \"action_get_device_details\"}, \"slots\": {\"device\": [1.0]}, \"user\": {\"intent\": \"get_device_details\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"set_brightness\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"set_temperature\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"device\": \"should_not_be_set\"}, \"user\": {\"intent\": \"turn_off_device\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"set_fan_speed\"}}, {\"prev_action\": {\"action_name\": \"action_set_fan_speed\"}, \"user\": {\"intent\": \"set_fan_speed\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_device_list\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"device\": \"should_not_be_set\"}, \"user\": {\"intent\": \"turn_on_device\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_device_list\"}}, {\"prev_action\": {\"action_name\": \"action_get_device_list\"}, \"user\": {\"intent\": \"get_device_list\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"device\": [1.0]}, \"user\": {\"intent\": \"get_device_details\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"device\": \"should_not_be_set\"}, \"user\": {\"intent\": \"turn_on_device\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_device_name\"}, \"slots\": {\"device\": \"should_not_be_set\"}, \"user\": {\"intent\": \"turn_on_device\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"set_fan_speed\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"set_temperature\"}}, {\"prev_action\": {\"action_name\": \"action_set_temperature\"}, \"user\": {\"intent\": \"set_temperature\"}}]"
+    ]
+  }
+}

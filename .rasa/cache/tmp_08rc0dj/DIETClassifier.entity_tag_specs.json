@@ -1,0 +1,20 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-device",
+      "2": "I-device",
+      "3": "L-device",
+      "4": "U-device",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-device": 1,
+      "I-device": 2,
+      "L-device": 3,
+      "U-device": 4,
+      "O": 0
+    },
+    "num_tags": 5
+  }
+]

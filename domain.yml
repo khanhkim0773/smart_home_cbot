@@ -1,0 +1,59 @@
+intents:
+  - turn_on_device
+  - turn_off_device
+  - get_device_list
+  - get_device_details
+  - set_brightness
+  - set_temperature
+  - set_fan_speed
+  - greet
+  - goodbye
+
+entities:
+  - device
+
+slots:
+  device:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: device
+  brightness:
+    type: text
+    mappings:
+      - type: from_text
+  temperature:
+    type: text
+    mappings:
+      - type: from_text
+  speed:
+    type: text
+    mappings:
+      - type: from_text   
+
+responses:
+  utter_turn_on_device:
+    - text: "Thiết bị {device} đã được bật."
+  utter_turn_off_device:
+    - text: "Thiết bị {device} đã được tắt."
+  utter_ask_device_name:
+    - text: "Bạn muốn bật/tắt thiết bị nào?"
+  utter_greet:
+    - text: "Chào bạn! Tôi có thể giúp gì cho bạn hôm nay?"
+    - text: "Xin chào! Hãy cho tôi biết bạn cần gì nhé."
+    - text: "Hello! Rất vui được hỗ trợ bạn."
+
+  utter_goodbye:
+    - text: "Tạm biệt! Hẹn gặp lại bạn lần sau."
+    - text: "Bye bye! Chúc bạn một ngày tốt lành."
+    - text: "Tạm biệt! Nếu cần giúp gì thêm, cứ gọi tôi nhé."
+
+actions:
+  - action_turn_on_device
+  - action_turn_off_device
+  - action_get_device_list
+  - action_get_device_details
+  - action_set_brightness
+  - action_set_temperature
+  - action_set_fan_speed

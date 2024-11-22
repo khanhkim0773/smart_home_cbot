@@ -1,0 +1,16 @@
+rasa train
+
+
+rasa run --debug --enable-api --cors '*'
+
+ngrok http 8000
+
+rasa run actions --port 5055
+rasa run --debug --enable-api --cors "*" --port 5005
+python -m http.server 8000
+ngrok start --all --config "C:\Users\present\.ngrok2\ngrok.yml"
+
+
+https://www.privacypolicygenerator.info/
+
+https://app.termsfeed.com/download/e159049b-d58b-4a2c-91ba-cdb2e211393c

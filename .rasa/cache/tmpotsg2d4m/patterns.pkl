@@ -1,0 +1,6 @@
+[
+  {
+    "name": "device",
+    "pattern": "(\\bđèn\\b|\\bquạt\\b|\\bmáy\\ lạnh\\b|\\bđiều\\ hòa\\b|\\bbóng\\ đèn\\b|\\bquạt\\ trần\\b|\\bquạt\\ điện\\b|\\bmáy\\ điều\\ hòa\\b)"
+  }
+]

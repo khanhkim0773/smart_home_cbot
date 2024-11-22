@@ -1,0 +1,129 @@
+version: "3.0"
+nlu:
+- intent: turn_on_device
+  examples: |
+    - Bật đèn
+    - Bật [đèn](device)
+    - Bật quạt
+    - Bật [quạt](device)
+    - Bật máy lạnh
+    - Bật [máy lạnh](device)
+    - Bật [thiết bị](device)
+
+- intent: turn_off_device
+  examples: |
+    - Tắt đèn
+    - Tắt [đèn](device)
+    - Tắt quạt
+    - Tắt [quạt](device)
+    - Tắt máy lạnh
+    - Tắt [máy lạnh](device)
+    - Tắt [thiết bị](device)
+
+- intent: get_device_details
+  examples: |
+    - Trạng thái của [đèn](device) là gì?
+    - [Đèn](device) đang bật hay tắt?
+    - Kiểm tra trạng thái của [đèn](device)
+    - [Đèn](device) đang ở trạng thái nào?
+    - Chi tiết của [đèn](device) là gì?
+
+    - Trạng thái của [máy lạnh](device) là gì?
+    - [máy lạnh](device) đang bật hay tắt?
+    - Kiểm tra trạng thái của [máy lạnh](device)
+    - [máy lạnh](device) đang ở trạng thái nào?
+    - Chi tiết của [máy lạnh](device) là gì?
+
+    - Trạng thái của [quạt](device) là gì?
+    - [quạt](device) đang bật hay tắt?
+    - Kiểm tra trạng thái của [quạt](device)
+    - [quạt](device) đang ở trạng thái nào?
+    - Chi tiết của [quạt](device) là gì?
+
+    - Trạng thái của [máy điều hòa](device) là gì?
+    - [máy điều hòa](device) đang bật hay tắt?
+    - Kiểm tra trạng thái của [máy điều hòa](device)
+    - [máy điều hòa](device) đang ở trạng thái nào?
+
+    - Chi tiết của [đèn](device) là gì?
+    - Đèn có độ sáng bao nhiêu?
+    - Quạt đang ở mức nào?
+    - Nhiệt độ của máy lạnh hiện tại là bao nhiêu?
+
+- intent: get_device_list
+  examples: |
+    - Hiển thị danh sách thiết bị
+    - Liệt kê các thiết bị
+    - Cho tôi xem các thiết bị hiện có
+    - Các thiết bị nào mà bot có thể điều khiển?
+    - Tôi có thể điều khiển những thiết bị nào?
+
+- intent: get_device_details
+  examples: |
+    - Chi tiết của [đèn](device) là gì?
+    - Đèn có độ sáng bao nhiêu?
+    - Quạt đang ở mức nào?
+    - Nhiệt độ của máy lạnh hiện tại là bao nhiêu?
+    - Máy lạnh đang ở nhiệt độ bao nhiêu?
+
+- intent: set_brightness
+  examples: |
+    - Đặt độ sáng của đèn thành 75%
+    - Độ sáng của đèn là 50%
+    - Cho đèn sáng 100%
+
+- intent: set_temperature
+  examples: |
+    - Đặt nhiệt độ máy lạnh thành 22 độ
+    - Nhiệt độ của máy lạnh là 26°C
+    - Cho máy lạnh 24 độ
+
+- intent: set_fan_speed
+  examples: |
+    - Đặt quạt ở mức 2
+    - Tăng tốc độ quạt lên 3
+    - Giảm tốc độ quạt xuống mức 1
+
+- intent: greet
+  examples: |
+    - Xin chào
+    - Chào bạn
+    - Hello
+    - Hi
+    - Chào bot
+    - Chào
+    - Hey bot
+    - Hey
+    - Có ai đó không?
+    - Bot ơi, bạn ở đó chứ?
+
+
+- intent: goodbye
+  examples: |
+    - Tạm biệt
+    - Bye
+    - Chào tạm biệt
+    - Hẹn gặp lại
+    - Tạm biệt bot
+    - See you later
+    - Bye bye
+    - Tạm biệt nhé
+
+# Synonyms for device names
+- synonym: đèn
+  examples: |
+    - bóng đèn
+    - đèn điện
+    - đèn bàn
+
+- synonym: quạt
+  examples: |
+    - quạt điện
+    - quạt máy
+    - quạt trần
+
+- synonym: máy lạnh
+  examples: |
+    - điều hòa
+    - máy điều hòa
+
